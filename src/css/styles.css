@@ -17,6 +17,5 @@
 @import url('./back-link.css');
 @import url('./footer.css');
 
-/* Hometasks */
-@import url('./timer-styles.css');
-@import url('./snackbar-styles.css');
+/* Hometask */
+@import url('./gallery.css');
