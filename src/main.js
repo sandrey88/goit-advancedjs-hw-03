@@ -20,7 +20,7 @@ function handleSearch(evt) {
       title: '❌',
       message:
         'Sorry, there are no images matching your search query. Please try again!',
-      color: 'red',
+      color: 'ef4040',
     });
     return;
   }
@@ -36,12 +36,14 @@ function handleSearch(evt) {
           title: '❌',
           message:
             'Sorry, there are no images matching your search query. Please try again!',
-          backgroundColor: '#B51B1B',
+          backgroundColor: '#ef4040',
           messageColor: 'white',
-          titleColor: 'yellow',
         });
         return;
       }
+
+      // Очищення тексту "not found" перед відображенням нових результатів
+      notFoundTextEl.innerHTML = '';
 
       createCardsMarkup(data.hits);
 
